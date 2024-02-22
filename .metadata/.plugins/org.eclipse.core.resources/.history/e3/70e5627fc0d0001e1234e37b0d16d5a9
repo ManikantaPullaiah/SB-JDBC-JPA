@@ -1,0 +1,17 @@
+package com.common.runner;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+@Component
+public class MyRunner implements CommandLineRunner {
+
+	@Autowired
+	PersonDao dao;
+	@Override
+	public void run(String... args) throws Exception {
+		
+
+	}
+
+}

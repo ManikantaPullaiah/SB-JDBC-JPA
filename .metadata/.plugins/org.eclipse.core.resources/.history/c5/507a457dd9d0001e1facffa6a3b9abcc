@@ -1,0 +1,28 @@
+package com.common.model;
+
+import java.time.LocalDateTime;
+
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Accounts")
+public class AccountEntity {
+	
+	private Integer accountId;
+	private String accountName;
+	private Double balance;
+	@Enumerated(EnumType.STRING)
+	private AccountStatus status;
+	@CreationTimestamp
+	private LocalDateTime creationTime;
+	@UpdateTimestamp
+	private LocalDateTime updatioTime;
+	
+
+}

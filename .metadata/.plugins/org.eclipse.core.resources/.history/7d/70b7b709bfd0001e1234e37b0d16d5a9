@@ -1,0 +1,31 @@
+package com.common.dao;
+
+import java.util.Map;
+
+public class PersonDaoImpl implements PersonDao {
+
+	@Override
+	public boolean addPerson(Integer pid, String name, String gender, int age) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean editPerson(Integer pid, int age) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deletePerson(Integer pid) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Map<String, Object> findPersonById(Integer pid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

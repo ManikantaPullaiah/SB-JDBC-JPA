@@ -1,0 +1,6 @@
+package com.common.model;
+
+public class AccountStatus {
+
+	ACTIVE,INACTIVE;
+}

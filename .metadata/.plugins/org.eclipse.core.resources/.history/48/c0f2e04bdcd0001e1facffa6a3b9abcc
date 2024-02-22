@@ -1,0 +1,14 @@
+package com.common.repo;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.common.model.AccountEntity;
+import com.common.model.AccountStatus;
+
+public interface AccountRepository extends JpaRepository<AccountEntity, Integer> {
+	
+List<AccountEntity>	findByAccountStatus(AccountStatus status);
+
+}

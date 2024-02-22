@@ -1,0 +1,18 @@
+package com.common.repo;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.common.model.AccountEntity;
+import com.common.model.AccountStatus;
+
+public interface AccountRepository extends JpaRepository<AccountEntity, Integer> {
+	
+//List<AccountEntity>	findByStatus(AccountStatus status);
+	
+	
+	fetchAccountDetailsByCreationTime(LocalDateTime time);
+
+}

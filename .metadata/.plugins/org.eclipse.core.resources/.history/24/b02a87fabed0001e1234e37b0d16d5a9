@@ -1,0 +1,10 @@
+package com.common.dao;
+
+public interface PersonDao {
+	
+	boolean addPerson(Integer pid,String name,String gender,int age);
+	
+	boolean editPerson(Integer pid,int age);
+	 boolean deletePerson(Integer pid);
+
+}

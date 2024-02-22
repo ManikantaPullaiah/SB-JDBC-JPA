@@ -1,0 +1,31 @@
+package com.common.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
+
+import com.common.model.Employee;
+
+@Repository
+public class EmployeeDaoImpl implements EmployeeDao {
+
+	@Autowired
+	JdbcTemplate template;
+	@Override
+	public List<Employee> findEmployeeByDeptno(Integer deptNo) {
+	RowMapper<Employee> rowMapper=(rs,rowIndex)->{
+		Employee employee=new Employee();
+		employee.setEmpNo(rs.getInt(1));
+		employee.setEmpName(rs.getString(2));
+		employee.setEmpSal(rs.getDouble(3));
+		employee.setDeptNo(rs.getInt(4));
+	}
+		
+	
+		return null;
+	}
+
+}

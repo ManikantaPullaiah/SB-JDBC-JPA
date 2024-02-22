@@ -1,0 +1,30 @@
+package com.common.dao;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class PersonDaoImpl implements PersonDao {
+
+	@Override
+	public boolean addPerson(Integer pid, String name, String gender, int age) {
+		return false;
+	}
+
+	@Override
+	public boolean editPerson(Integer pid, int age) {
+		return false;
+	}
+
+	@Override
+	public boolean deletePerson(Integer pid) {
+		return false;
+	}
+
+	@Override
+	public Map<String, Object> findPersonById(Integer pid) {
+		return null;
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.common.dao;
+
+public interface EmployeeDao {
+	List<Employee> findEmployeeByDeptno(Integer deptNo);
+
+}
